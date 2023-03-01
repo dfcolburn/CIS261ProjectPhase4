@@ -58,7 +58,7 @@ def printuserinfo():
 def Login():
         # read login information and store in a list
     ########## Write the line of code that will open the file Users.txt in read mode
-    UserFile = open("Users.txt",  "r")
+    UserFile = open("Users.txt","r")      
     
     UserName = input("Enter User Name: ")
     UserRole = "None"

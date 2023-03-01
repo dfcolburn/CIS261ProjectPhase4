@@ -1,0 +1,8 @@
+BWilliams|hgyfk123|User
+User2|User2pwd|Admin
+User1|User1pwd|User
+User2|User2pwd|Admin
+user1|user1pwd|User
+user2|user2pwd|Admin
+user1|user1pwd|user
+user2|user2pwd|admin
