@@ -193,5 +193,5 @@ if __name__ == "__main__":
                 EmpDetail = fromdate + "|" + todate  + "|" + empname  + "|" + str(hours)  + "|" + str(hourlyrate)  + "|" + str(taxrate) + "\n"  
                 EmpFile.write(EmpDetail)
         # close file to save data
-            EmpFile.close()    
+        EmpFile.close()    
         printinfo(DetailsPrinted)
