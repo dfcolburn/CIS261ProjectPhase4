@@ -41,7 +41,7 @@ def GetUserRole():
             userrole = input("Enter role (Admin or User): ")              
 
 def printuserinfo():
-    UserFile = open("Users.txt","r")
+    UserFile = open("User.txt",  "r")
     while True:
         UserDetail = UserFile.readline()
         if not UserDetail:
@@ -58,7 +58,7 @@ def printuserinfo():
 def Login():
         # read login information and store in a list
     ########## Write the line of code that will open the file Users.txt in read mode
-    UserFile = open("Users.txt","r")      
+    UserFile = open("User.txt", "r")      
     
     UserName = input("Enter User Name: ")
     UserRole = "None"
@@ -70,7 +70,7 @@ def Login():
        ########## Write the line of code that will replace the carriage return in UserDetail
        UserDetail = UserDetail.replace("\n", "")
        ########## Write the line of code that will split UserDetail on the pipe delimiter (|) and assign it to UserList
-       UserDetail= UserList.split('|')         
+       UserList = UserDetail.split("|")
        if UserName == UserList[0]:
             UserRole = UserList[2]  # user is valid, return role
             return UserRole, UserName
@@ -104,7 +104,7 @@ def printinfo(DetailsPrinted):
     TotGrossPay = 0.00
     TotTax = 0.00
     TotNetPay = 0.00
-    EmpFile = open("Employees.txt","r")
+    EmpFile = open("Employees.txt", "r")
     while True:
         rundate = input ("Enter start date for report (MM/DD/YYYY) or All for all data in file: ")
         if (rundate.upper() == "ALL"):
