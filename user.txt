@@ -6,3 +6,5 @@ user1|user1pwd|User
 user2|user2pwd|Admin
 user1|user1pwd|user
 user2|user2pwd|admin
+user1|user1pwd|user
+user2|user2pwd|admin
